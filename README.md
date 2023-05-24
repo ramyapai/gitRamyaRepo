@@ -10,4 +10,4 @@ This repository contains the file App.java for web based automation testing of t
 **Objectives:**
 
 The application contains the automation of several test scenarios for the web page "https://thg-greenair.dev.wgv.onpier.de/onboarding".
-Additionally, the automated scenarios are listed in the "Test scenario sheet" excel file
+Additionally, the automated scenarios are listed in the "Test scenario sheet" excel file.
