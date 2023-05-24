@@ -1,6 +1,4 @@
-# gitRamyaRepo
-
-Java Selenium Code
+# Java Selenium Code
 
 This repository contains the file App.java for web based automation testing of the URL "https://thg-greenair.dev.wgv.onpier.de/onboarding"
 
