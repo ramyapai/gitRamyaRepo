@@ -1,0 +1,4 @@
+Please find the Java selenium code in App.class
+Have assumed that you are using chrome browser and have taken chromedriver.exe
+Path of chromedriver.exe should be changed based on where it is placed in your system.
+Test scenario sheet has been added that contains all the scenarios automated
