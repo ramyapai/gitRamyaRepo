@@ -6,9 +6,9 @@ The test cases are automated by providing the multiple combinations of input in 
 ## Pre-requisites
 
 This execution of this project requires the following applications
-a. JUnit (v5)
-b. Maven
-c. SureFire report plugin
+- JUnit (v5)
+- Maven
+- SureFire report plugin
 
 ## SureFire Plugin Details
 
@@ -27,6 +27,15 @@ c. SureFire report plugin
 </plugin>
 ````
 
+## Content of the repository
+
+- Test case sheet with priorities - Test case sheet.xlsx
+- The requirement code - mavenProject/dailpad/src/main/java/com/telephonedailpad/TelephoneDialPad.java
+- The test JUnit automation code - mavenProject/dailpad/src/test/java/com/telephonedailpad/TestTelephoneDialPad.java
+- Test data sheet in CSV format - mavenProject/dailpad/src/test/resources/testData.csv
+- Surefire XML report - mavenProject/dailpad/target/surefire-reports
+- Surefire HTML report - mavenProject/dailpad/target/site/Junit-SureFire-HTML-Report.html
+
 ## Usage steps
 
 The following are the steps to execute the code as well as test cases
@@ -39,5 +48,3 @@ The following are the steps to execute the code as well as test cases
    The results will be shown both in the test terminal and in SureFire XML reports generated in <project location>\target\surefire-reports folder.
 5. Run **mvn surefire-report:report** to get the HTML report in <project location>\target\site\Junit-SureFire-HTML-Report.html
 6. The XML and HTML reports will contain the details of the number of test cases that were executed and their respective results (Pass / Fail)
-
-
