@@ -15,12 +15,14 @@ import org.junit.jupiter.params.provider.CsvFileSource;
 public class TestTelephoneDialPad {
     TelephoneDialPad telephoneDialPad;
     
-
+    //To create telephoneDialPad object
     @BeforeEach
     void setUp()
     {
         telephoneDialPad = new TelephoneDialPad();
     }
+
+    //a parameterised test to check alphabet combinations for different inputs
     @ParameterizedTest
     @DisplayName("Verification if Alphabetic combinations are as expected")
     @CsvFileSource(resources = "/testData.csv", numLinesToSkip = 1, encoding = "UTF-8" )
@@ -31,6 +33,7 @@ public class TestTelephoneDialPad {
         assertLinesMatch(expectedOp, actualOp);
     }
 
+    //To test if the code return lower case letters
     @Test
     @DisplayName("Verification if code returns lower case alphabets")
     public void testLowerCase()
@@ -43,6 +46,7 @@ public class TestTelephoneDialPad {
         assertFalse("the code only return upper case alphabets", expectedOp.equals(actualOp));
     }
 
+    //To test exception and message when the input is anything but an integer
     @Test
     @DisplayName("Exception testing: when anything other than number is passed as input")
     public void exceptionTesting()
