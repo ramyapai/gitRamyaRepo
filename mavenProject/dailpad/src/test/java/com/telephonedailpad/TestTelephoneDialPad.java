@@ -22,7 +22,7 @@ public class TestTelephoneDialPad {
         telephoneDialPad = new TelephoneDialPad();
     }
 
-    //a parameterised test to check alphabet combinations for different inputs
+    //a parameterised test to check alphabet combinations for different inputs from CSV file
     @ParameterizedTest
     @DisplayName("Verification if Alphabetic combinations are as expected")
     @CsvFileSource(resources = "/testData.csv", numLinesToSkip = 1, encoding = "UTF-8" )
